@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Badeen+Display&display=swap" rel="stylesheet">
+<style>
+@font-face {
+    font-family: 'Al7rmen';
+    src: url('al7rmen.otf') format('opentype');
+    font-display: swap;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f1e8 0%, #e8dcc0 50%, #d4c5a0 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.m3{
+    font-family: 'al7rmen';
+    font-size: clamp(25px, 5vw, 40px);
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: fadeslide 1s ease-out forwards;
+    z-index: 100;
+}
+
+@keyframes fadeslide {
+    0%{
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+    
+.mr-shr7, .mr-mt{
+    width: 45%;
+    max-width: 600px;
+    min-width: 250px;
+    height: clamp(450px, 60vh, 600px);
+    background-color: rgb(85, 107, 47);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    padding: 20px;
+    position: relative;
+    flex-shrink: 1;
+}
+
+.mr-shr7:hover, .mr-mt:hover{
+    transform: translateY(-10px);
+}
+
+.mr-shr72, .mr-mt2{
+    width: calc(100% - 40px);
+    height: clamp(60px, 15%, 100px);
+    padding: 10px;
+    background-color:#d4c5a0;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 10px;
+}
+
+.ماهوا-يوم-المعلم, .متى{
+    font-family: 'Badeen Display';
+    font-size: clamp(20px, 3.5vw, 45px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.الشرح, .bda{
+    font-family: 'Badeen Display';
+    font-size: clamp(25px, 3.5vw, 50px);
+    position: absolute;
+    top: clamp(150px, 35%, 200px);
+    left: 50%;
+    transform: translateX(-50%);
+    color: #d4c5a0;
+    text-align: center;
+    width: calc(100% - 60px);
+    line-height: 1.5;
+}
+
+.al56{
+    font-family: 'Al7rmen';
+    margin: 0;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    font-size: clamp(14px, 2vw, 20px);
+    animation: fadeslide 1s ease-out forwards;
+    animation-delay: 0.5s;
+    z-index: 100;
+}
+</style>
+</head>
+<body>
+<p class="m3">يوم المعلم</p>
+<div class="container">
+    <div class="mr-mt">
+        <div class="mr-mt2">
+            <p class="متى">متى بداء يوم المعلم</p>
+        </div>
+        <p class="bda">بدأ الاحتفال بيوم المعلم عام 1994 بعد أن أقرّت اليونسكو هذا اليوم للاحتفاء بالمعلمين في جميع أنحاء العالم.</p>
+    </div>
+    <div class="mr-shr7">
+        <div class="mr-shr72">
+            <p class="ماهوا-يوم-المعلم">ماهوا يوم المعلم</p>
+        </div>
+        <p class="الشرح">يحتفل العالم في الخامس من أكتوبر من كل عام بيوم المعلم تقديرًا لجهود المعلمين في بناء الأجيال ونشر العلم والمعرفة.</p>
+    </div>
+</div>
+<h1 class="al56">ثانويه الحرمين</h1>
+</body>
+</html>
